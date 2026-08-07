@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembaruan Aplikasi</title>
+    <style>
+        /* Mengatur tampilan dasar halaman */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Desain Card bergaya Glassmorphism */
+        .update-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 255, 136, 0.2);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Animasi mengambang (Floating Effect) */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Ikon bagian atas */
+        .icon {
+            font-size: 65px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Teks Judul */
+        h1 {
+            margin: 0 0 15px;
+            font-size: 26px;
+            color: #00ff88;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 800;
+        }
+
+        /* Teks Deskripsi */
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            color: #dcdcdc;
+        }
+
+        /* Tombol Install yang Kece */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #00ff88, #00c3ff);
+            color: #121212;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
+        }
+
+        /* Efek saat tombol disentuh (Hover) */
+        .btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 255, 136, 0.6);
+            color: #000000;
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+    <!-- Menambahkan Font Poppins dari Google Fonts agar lebih elegan -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="update-card">
+        <div class="icon">🚀</div>
+        <h1>Update Tersedia!</h1>
+        <p>Aplikasi ini telah di-update ke versi terbaru. Tingkatkan pengalamanmu dan nikmati fitur-fitur baru dengan menginstal versi terkininya sekarang juga!</p>
+        
+        <!-- Link WhatsApp dimasukkan ke dalam tombol ini -->
+        <a href="https://chat.whatsapp.com/Ex4np7iVYeK6zsvq4jQvcL" class="btn" target="_blank">INSTALL SEKARANG</a>
+    </div>
+
+</body>
+</html>
